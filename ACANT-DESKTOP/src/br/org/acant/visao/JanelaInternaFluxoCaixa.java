@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Vector;
-
 import javax.swing.JInternalFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -20,7 +19,6 @@ import javax.swing.event.InternalFrameEvent;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
-
 import br.org.acant.modelo.FluxoCaixa;
 import br.org.acant.modelo.Lancamento;
 import br.org.acant.modelo.PlanoConta;
@@ -57,7 +55,7 @@ public class JanelaInternaFluxoCaixa extends JanelaInternaMae {
 		tableModel.addColumn("$ Recebido");
 		tableModel.addColumn("$ Pago");
 		tableModel.addColumn("Saldo");
-
+		
 		tabela = new JTable(tableModel) {
 			private static final long serialVersionUID = 1L;
 			@Override
