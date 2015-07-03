@@ -83,12 +83,15 @@ public class JanelaInternaPessoaLogin extends JanelaInternaMae
 			if (!campoNome.getText().trim().equals("")) {
 				try {
 					boolean existePessoa =
-							Pessoa.consultarPessoa(campoNome.getText().trim());
+							Pessoa.consultarPessoa(
+									campoNome.getText().trim());
 					if (existePessoa) {
 
-						Pessoa pessoa = Pessoa.obterPessoa(campoNome.getText().trim());
+						Pessoa pessoa = Pessoa.obterPessoa(
+											campoNome.getText().trim());
 
-						String senhaDigitada = new String(campoSenha.getPassword());
+						String senhaDigitada = new String(
+												campoSenha.getPassword());
 						if (senhaDigitada.equals(pessoa.getSenha())) {
 							campoNome.setText("");
 							campoSenha.setText("");
@@ -114,7 +117,8 @@ public class JanelaInternaPessoaLogin extends JanelaInternaMae
 					e.printStackTrace();
 				}
 			} else {
-				JOptionPane.showMessageDialog(this, "Nada foi digitado no campo nome");
+				JOptionPane.showMessageDialog(this,
+						"Nada foi digitado no campo nome");
 				campoNome.requestFocus();
 			}
 		} else if (ae.getSource() == bCancelar) {
