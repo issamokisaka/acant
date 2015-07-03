@@ -66,10 +66,11 @@ public class JanelaInternaPessoaLogin extends JanelaInternaMae
 			@Override
 			public void internalFrameClosing(InternalFrameEvent e) {
 				super.internalFrameClosing(e);
+
 				campoNome.setText("");
 				campoSenha.setText("");
 				logPess.setVisible(false);
-				
+
 				logPess.acant.botaoCadastrar.setEnabled(true);
 				logPess.acant.botaoLogar.setEnabled(true);
 			}

@@ -23,7 +23,6 @@ import javax.swing.JToolBar;
 import javax.swing.SwingConstants;
 
 import br.org.acant.modelo.Pessoa;
-import br.org.acant.util.Calculadora;
 
 public class JanelaPrincipal extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
@@ -32,9 +31,9 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 
 	protected JButton botaoCadastrar;
 	protected JButton botaoLogar;
+	protected JButton botaoCalc;
 
 	private JButton botaoImprimir;
-	private JButton botaoCalc;
 	private JButton botaoBkp;
 
 	private JButton botaoSair;
@@ -238,7 +237,7 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 		} else if (ae.getSource() == botaoCadastrar) {
 			botaoCadastrar.setEnabled(false);
 			botaoLogar.setEnabled(false);
-			
+
 			if (logPess != null) {
 				logPess.setVisible(false);
 			}
@@ -255,7 +254,7 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 		} else if (ae.getSource() == botaoLogar) {
 			botaoCadastrar.setEnabled(false);
 			botaoLogar.setEnabled(false);
-			
+
 			if (cadPess != null) {
 				cadPess.setVisible(false);
 			}
@@ -271,7 +270,7 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 			logPess.setVisible(true);
 		} else if (ae.getSource() == botaoCalc) {
 			botaoCalc.setEnabled(false);
-			
+
 			calc = new Calculadora(this);
 			painelCentral.add(calc);
 			calc.setVisible(true);

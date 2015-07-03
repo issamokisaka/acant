@@ -137,7 +137,8 @@ public class Calculadora extends JanelaInternaMae
 				super.internalFrameClosing(e);
 
 				jim.setVisible(false);
-
+				
+				jim.acant.botaoCalc.setEnabled(true);
 // ########################################################
 			}
 		});

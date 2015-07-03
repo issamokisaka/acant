@@ -55,7 +55,7 @@ public class JanelaInternaFluxoCaixa extends JanelaInternaMae {
 		tableModel.addColumn("$ Recebido");
 		tableModel.addColumn("$ Pago");
 		tableModel.addColumn("Saldo");
-		
+
 		tabela = new JTable(tableModel) {
 			private static final long serialVersionUID = 1L;
 			@Override
@@ -69,9 +69,11 @@ public class JanelaInternaFluxoCaixa extends JanelaInternaMae {
 
 				if (column == 0) {
 					if (tableModel.getValueAt(row, column) != null) {
-						String valor = (String)tableModel.getValueAt(row, column);
+						String valor = (String)tableModel.getValueAt(
+								row, column);
 						if (valor.contains("/")) {
-							c.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 12));
+							c.setFont(new Font(Font.SANS_SERIF,
+									Font.BOLD, 12));
 							c.setForeground(Color.BLACK);
 						}
 					}
@@ -80,12 +82,15 @@ public class JanelaInternaFluxoCaixa extends JanelaInternaMae {
 					c.setForeground(Color.RED);
 				} else if (column == 5) {
 					if (tableModel.getValueAt(row, column) != null) {
-						String valor = (String)tableModel.getValueAt(row, column);
+						String valor = (String)tableModel.getValueAt(
+										row, column);
 						if (valor.contains("-")) {
-							c.setFont(new Font(Font.SANS_SERIF, Font.BOLD , 12));
+							c.setFont(new Font(Font.SANS_SERIF,
+									Font.BOLD , 12));
 							c.setForeground(Color.RED);
 						} else {
-							c.setFont(new Font(Font.SANS_SERIF, Font.PLAIN , 12));
+							c.setFont(new Font(Font.SANS_SERIF,
+									Font.PLAIN , 12));
 							c.setForeground(Color.BLACK);
 						}
 					}
@@ -98,7 +103,8 @@ public class JanelaInternaFluxoCaixa extends JanelaInternaMae {
 			}
 		};
 
-		tabela.getTableHeader().setFont(new Font(Font.SANS_SERIF, Font.BOLD, 12));
+		tabela.getTableHeader().setFont(new Font(
+				Font.SANS_SERIF, Font.BOLD, 12));
 		tabela.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		tabela.getTableHeader().setResizingAllowed(false);
 //		tabela.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);

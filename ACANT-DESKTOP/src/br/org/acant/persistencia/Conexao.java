@@ -10,8 +10,8 @@ public class Conexao {
 	private static final String USUARIO = "sa";
 	private static final String SENHA = "";
 
-	private static final String BASE = "acant.db";
-//	private static final String BASE = "/home/"+System.getenv("USER")+"/Development/acant/acant.db";
+//	private static final String BASE = "acant.db";
+	private static final String BASE = "/home/"+System.getenv("USER")+"/acant/acant.db";
 
 	private static final String URL = "jdbc:sqlite:";
 	private static final String DRIVER = "org.sqlite.JDBC";
