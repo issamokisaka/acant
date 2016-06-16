@@ -33,9 +33,6 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 	protected JButton botaoLogar;
 	protected JButton botaoCalc;
 
-	private JButton botaoImprimir;
-	private JButton botaoBkp;
-
 	private JButton botaoSair;
 
 	private JDesktopPane painelCentral;
