@@ -39,6 +39,10 @@ implements ActionListener {
 		initComponents();
 	}
 
+	public void printTeste() {
+		
+	}
+
 	private void initComponents() {
 		setBounds(50, 50, 500, 100);
 		setClosable(true);
