@@ -5,9 +5,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
-
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JInternalFrame;
 import javax.swing.JPanel;
 import javax.swing.JTable;
@@ -21,17 +19,17 @@ public class JanelaInternaPlanoContaAtualizacao extends JanelaInternaMae
 implements ActionListener {
 	private static final long serialVersionUID = 1L;
 
-	private JComboBox<String> combo01;
+//	private JComboBox<String> combo01;
 	private JTextField campoNomeConta;
 	private JPanel  painelSuperior;
-	
+
 	private JButton bAtualizar;
 	private JButton bCancelar;
 	private JPanel  painelInferior;
 
 	private PlanoConta pcs;
 //	private JTable tabela;
-	
+
 	public JanelaInternaPlanoContaAtualizacao(JanelaPrincipal acant,
 			PlanoConta pcs, JTable tabela) {
 		super("Atualizar Plano de Conta", acant);
